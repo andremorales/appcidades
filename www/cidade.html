@@ -1,0 +1,28 @@
+<div class="page">
+
+    <div class="header green">
+        <div class="left">
+            <button class="icon ion-android-arrow-back" onclick="backPage()"></button>
+        </div>
+        <h1>Cidades</h1>
+        <div class="right">
+            <button class="icon ion-search"></button>
+            <button class="icon ion-android-more-vertical"></button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="list">
+            <button id="carregando-listagem"></button>
+            <div class="grey-800 blend-multiply border-green margin-button cover shadow" style="background-image: url(https://picsum.photos/300/300/?random=${id})"
+                data="cidade">
+                </button>
+                <h1>
+                    <strong class "text-green">${nome}</strong>
+                </h1>
+                <p class="text-grey">${microrregiao.nome}</p>
+                <p class="text-green cover">Turismo pelo ${regiao.nome} do Brasil</p>
+            </div>
+        </div>
+    </div>
+</div>

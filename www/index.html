@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
+  <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title>Apache Cordova</title>
+</head>
+
+<body>
+  <div class="header green">
+    <div class="left">
+      <button class="icon ion-navicon-round"></button>
+    </div>
+    <h1>Cidades</h1>
+    <div class="right">
+      <button class="icon ion-search"></button>
+      <button class="icon ion-android-more-vertical"></button>
+    </div>
+  </div>
+
+
+  <div class="has-header content item">
+    <div class="list" data="estados">
+      <button id="carregando-listagem"></button>
+      <div class="grey-800 blend-multiply border-green margin-button cover shadow" onclick="paginaCidade('${id}')" style="background-image: url(https://picsum.photos/300/300/?random=${id})">
+        <button class="right icon ion-chevron-right circle text-big padding text-green ">
+        </button>
+        <h1>
+          <strong class "text-green">${nome}</strong>
+        </h1>
+        <p class="text-grey">${sigla}</p>
+        <p class="text-green cover">Turismo pelo ${regiao.nome} do Brasil</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="mobileui/mobileui.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
